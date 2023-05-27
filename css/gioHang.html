@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title>Trang giỏ hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 200px;
+            height: 100px;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav li {
+            margin-right: 20px;
+        }
+
+        .nav li a {
+            display: block;
+            color: #66afe9;
+            text-decoration: none;
+        }
+
+        .nav li a:hover {
+            text-decoration: underline;
+        }
+
+        .cart {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+
+        .cart img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cart span {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .main {
+           padding :20px; 
+       }
+       .main h2 { 
+           text-align:center; 
+           margin-bottom :20px; 
+           color :#66afe9; 
+           font-weight :bold; 
+           font-size :24px; 
+       }
+       .main table { 
+           width :100%; 
+           border-collapse :collapse; 
+       }
+       .main table th, .main table td { 
+           border :1px solid #ccc; 
+           padding :10px; 
+           text-align :center; 
+       }
+       .main table th { 
+           background-color :#f0f0f0; 
+           color :#333; 
+           font-weight :bold; 
+       }
+       .main table td img { 
+           width :100px; 
+           height :100px; 
+       }
+       .main table td button { 
+           display:block; 
+           width :100%; 
+           padding :10px; 
+           background-color :#66afe9; 
+           color :white; 
+           border :none; 
+           cursor :pointer; 
+       }
+       .main table td button:hover { 
+           background-color :#5c9fe1; 
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <img src="/mobile-store-concept-logo-free-vector.jpg" alt="Logo" class="logo">
+          <ul class="nav">
+              <li><a href="trangChu.html">Trang chủ</a></li>
+              <li><a href="gioiThieu.html">Giới thiệu</a></li>
+              <li><a href="sanPham.html">Sản phẩm</a></li>
+              <li><a href="#">Liên hệ</a></li>
+          </ul>
+          <div class="cart">
+              <img src="/cart.jpg" alt="Cart">
+              <span>2</span>
+          </div>
+      </div>
+      <div class="main">
+          <h2>Giỏ hàng của bạn</h2>
+          <table>
+              <tr>
+                  <th>Sản phẩm</th>
+                  <th>Tên sản phẩm</th>
+                  <th>Giá sản phẩm</th>
+                  <th>Số lượng</th>
+                  <th>Thành tiền</th>
+                  <th>Xóa</th>
+              </tr>
+
+              <!-- Add more products here -->
+
+              <tr>
+                  <td><img src="iphone13.jpg" alt="iPhone 13"></td>
+                  <td>iPhone 13</td>
+                  <td>25.000.000 VNĐ</td>
+                  <td>1</td>
+                  <td>25.000.000 VNĐ</td>
+                  <td><button>Xóa</button></td>
+              </tr>
+
+              <tr>
+                  <td><img src="samsungs21.jpg" alt="Samsung S21"></td>
+                  <td>Samsung S21</td>
+                  <td>20.000.000 VNĐ</td>
+                  <td>1</td>
+                  <td>20.000.000 VNĐ</td>
+                  <td><button>Xóa</button></td>
+              </tr>
+
+              <!-- Add more products here -->
+
+              <!-- Add total amount here -->
+
+              <tr>
+                  <td colspan="4">Tổng cộng:</td>
+                  <td colspan="2">45.000.000 VNĐ</td>
+
+              </tr>
+
+          </table>
+
+      </div>
+
+    </div>
+
+</body>
+
+</html>
+
