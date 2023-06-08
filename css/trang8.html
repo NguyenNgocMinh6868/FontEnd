@@ -11,12 +11,13 @@
   </head>
   <body ng-app="myApp">
     <div ng-include="header.html"></div>
-    <p>Trang chu</p>
+    <div ng-view></div>
     <div ng-include="footer.html"></div>
 
 
     <script>
       var app = angular.module('myApp', [ngRoute]);
+      app.config(function ($routeProvider))
     </script>
   </body>
 </html>
