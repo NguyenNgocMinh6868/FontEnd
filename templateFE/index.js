@@ -77,5 +77,3 @@ window.sanPhamController = function ($scope, $http) {
 			});
 		};
 	  };
-	
-  
