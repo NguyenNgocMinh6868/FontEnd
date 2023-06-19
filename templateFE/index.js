@@ -31,22 +31,7 @@ window.sanPhamController = function ($scope, $http) {
 		  });
 	  };
 	
-	  $scope.update = function () {
-		$http
-		  .put("http://localhost:3000/SanPham/" + $scope.id, {
-			id: $scope.id,
-		  	ten: $scope.ten,
-		  	soLuongTon: $scope.soLuongTon,
-		  	loaiSanPham: $scope.loaiSanPham,
-          	gia: $scope.gia,
-          	hinhThucSanXuat: $scope.hinhThucSanXuat
-		  })
-		  .then(function (response) {
-			if (response.status === 200) {
-			  alert("update thanh cong");
-			}
-		  });
-	  };
+	 
 
 		}	
 	window.detailController = function ($scope, $http, $routeParams, $location) {
@@ -59,21 +44,20 @@ window.sanPhamController = function ($scope, $http) {
 		  $scope.gia = response.data.gia;
 		  $scope.hinhThucSanXuat = response.data.hinhThucSanXuat
 		});
-		$scope.update = function () {
-		  $http
-			.put("http://localhost:3000/SanPham/" + id, {
+		$scope.sua = function () {
+			$http
+			  .put("http://localhost:3000/SanPham/" + $scope.id, {
 				id: $scope.id,
-				ten: $scope.ten,
-				soLuongTon: $scope.soLuongTon,
-				loaiSanPham: $scope.loaiSanPham,
-				gia: $scope.gia,
-				hinhThucSanXuat: $scope.hinhThucSanXuat
-			})
-			.then(function (response) {
-			  if (response.status === 200) {
-				alert("update thanh cong");
-				$location.url("/home");
-			  }
-			});
-		};
+				  ten: $scope.ten,
+				  soLuongTon: $scope.soLuongTon,
+				  loaiSanPham: $scope.loaiSanPham,
+				  gia: $scope.gia,
+				  hinhThucSanXuat: $scope.hinhThucSanXuat
+			  })
+			  .then(function (response) {
+				if (response.status === 200) {
+				  alert("update thanh cong");
+				}
+			  });
+		  };
 	  };

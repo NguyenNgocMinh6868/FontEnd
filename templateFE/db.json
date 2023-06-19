@@ -3,7 +3,7 @@
     {
       "id": 1,
       "ten": "rolex",
-      "soLuongTon": "10",
+      "soLuongTon": "101",
       "loaiSanPham": "Sach 1",
       "gia": "100000",
       "hinhThucSanXuat": "Trong nuoc"
@@ -17,15 +17,12 @@
       "hinhThucSanXuat": "Ngoai nuoc"
     },
     {
-      "id": 3,
-      "ten": "rolex",
-      "soLuongTon": "10",
-      "loaiSanPham": "Sach 3",
-      "gia": "7",
-      "hinhThucSanXuat": "Trong nuoc"
-    },
-    {
-      "id": 4
+      "id": "11111",
+      "ten": "1a",
+      "soLuongTon": "11",
+      "loaiSanPham": "Sach 1",
+      "gia": "1",
+      "hinhThucSanXuat": "Ngoai nuoc"
     }
   ]
 }

@@ -27,6 +27,7 @@
           .when("/detail/:id", {
             templateUrl: "detail.html",
             controller: detailController,
+            
           })
           .when("/them", {
             templateUrl: "SanPham.html",
@@ -37,7 +38,7 @@
             controller: sanPhamController,
           })
           .otherwise({
-            redirectTo: "/home",
+            redirectTo: "/them",
           });
       });
 </script>

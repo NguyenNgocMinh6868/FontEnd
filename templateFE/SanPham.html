@@ -4,19 +4,19 @@
     <form action="" method="post">
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">id</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" ng-model="id">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">ten</label>
-        <input type="text" class="form-control" >
+        <input type="text" class="form-control" ng-model="ten">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">so luong ton</label>
-        <input type="number" class="form-control" >
+        <input type="text" class="form-control" ng-model="soLuongTon">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">loai san pham</label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" ng-model="loaiSanPham">
           <option value="Sach 1">s1</option>
           <option value="Sach 2">s2</option>
           <option value="Sach 3">s3</option>
@@ -24,27 +24,27 @@
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">gia</label>
-        <input type="number" class="form-control" >
+        <input type="text" class="form-control" ng-model="gia">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">hinh thuc san xuat</label>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Ngoai nuoc"
-            >
+            ng-model="hinhThucSanXuat">
           <label class="form-check-label" for="flexRadioDefault1">
             Ngoai nuoc
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Trong nuoc"
-           checked>
+            ng-model="hinhThucSanXuat" checked>
           <label class="form-check-label" for="flexRadioDefault2">
             Trong nuoc
           </label>
         </div>
       </div>
       <a href="#them"><button type="submit" class="btn btn-primary" ng-click="them()">Them</button></a>
-    <!-- <a href="#sua"><button type="submit" class="btn btn-primary" ng-click="sua()">Sua</button></a> -->
+
     </form>
     <!-- <a href="#them"><button type="submit" class="btn btn-primary" ng-click="them()">Them</button></a>
     <a href="#sua"><button type="submit" class="btn btn-primary" ng-click="sua()">Sua</button></a> -->
